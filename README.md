@@ -3,6 +3,10 @@
 Bem-vindo ao repositório do meu **Portfólio Pessoal**! Este projeto foi desenvolvido para apresentar meus principais projetos, habilidades, certificações e formas de contato de maneira profissional, moderna e responsiva.
 
 ---
+## 📸 Preview do Portfólio
+![Preview do Portfólio](./assets/Captura_de_tela_2025-12-09_013404.png)
+
+---
 
 ## 🚀 Sobre o Projeto
 
