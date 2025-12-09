@@ -4,7 +4,7 @@ Bem-vindo ao repositório do meu **Portfólio Pessoal**! Este projeto foi desenv
 
 ---
 ## 📸 Preview do Portfólio
-![Preview do Portfólio](./assets/Captura_de_tela_2025-12-09_013404.png)
+![Preview do Portfólio](./assets/Captura_de_tela.png)
 
 ---
 
