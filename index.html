@@ -1,298 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ✅ SEO PRINCIPAL -->
   <title>Pedro Martins | Desenvolvedor Full-Stack</title>
-
-  <meta name="description" content="Portfólio de Pedro Martins, Desenvolvedor Full-Stack em formação, com foco em Front-end. Projetos em HTML, CSS, JavaScript, React e Next.js." />
-
-  <meta name="keywords" content="Pedro Martins, Desenvolvedor Front-end, Desenvolvedor Full-Stack, Portfólio, HTML, CSS, JavaScript, React, Next.js" />
-
+  <meta name="description" content="Portfólio de Pedro Martins — Desenvolvedor Full-Stack em formação, com foco em Front-end (HTML, CSS, JavaScript, React, Next.js)." />
+  <meta name="keywords" content="Pedro Martins, Desenvolvedor Front-end, Portfólio, HTML, CSS, JavaScript, React, Next.js" />
   <meta name="author" content="Pedro Emmanuel Amaral Martins" />
-
-  <!-- ✅ OPEN GRAPH (QUANDO COMPARTILHAR NO WHATSAPP, LINKEDIN, ETC) -->
   <meta property="og:title" content="Pedro Martins | Desenvolvedor Full-Stack" />
   <meta property="og:description" content="Confira meus projetos em Front-end e Full-Stack. HTML, CSS, JavaScript, React e Next.js." />
-  <meta property="og:type" content="website" />
-
-  <!-- ✅ CSS -->
-  <link rel="stylesheet" href="./style.css" />
-
-  <!-- ✅ FAVICON (OPCIONAL, MAS RECOMENDADO) -->
   <link rel="icon" href="./assets/perfil.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="site">
+    <!-- HEADER / NAV -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Ir para o início">
+          <img src="./assets/perfil.png" alt="Foto de Pedro Martins" class="brand-img" />
+          <span class="brand-name">Pedro Martins</span>
+        </a>
 
-    <!-- HEADER -->
-    <header>
-      <nav class="nav_links">
-        <ul>
-          <li>
-            <a class="home" href="#home">
-              <img src="./assets/perfil.png" alt="Logo" />
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="#sobre-mim">Sobre mim</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#certificados">Certificados</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-        </ul>
-        <div class="limite_menu"></div>
-      </nav>
+        <button id="btn-menu" class="btn-menu" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+
+        <nav id="primary-navigation" class="nav" role="navigation" aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="#sobre-mim">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="certificados.html">Certificados</a></li>
+            <li><a href="#contatos">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <!-- APRESENTAÇÃO -->
-    <main class="apresentacao" id="home">
-      <section class="apresentacao_conteudo">
-        <h1 class="apresentacao__conteudo__titulo">Olá, eu sou o</h1>
-        <h1 class="apresentaca_destaque">
-          <strong class="titulo_destaque">Pedro Emmanuel Amaral Martins</strong>
-        </h1>
-        <p class="apresentacao__conteudo__texto">Desenvolvedor Full-Stack!</p>
+    <!-- HERO / APRESENTAÇÃO -->
+    <section id="home" class="hero" role="region" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Olá, eu sou</p>
+          <h1 id="hero-title" class="hero-title">Pedro Emmanuel <span class="accent">Amaral Martins</span></h1>
+          <p class="hero-subtitle">Desenvolvedor Full-Stack | foco em Front-end — HTML, CSS, JavaScript, React e Next.js</p>
 
-        <div class="apresentacao_habilidades">
-          <h2 class="apresentacao_habilidades_subtitulo">Minhas habilidades:</h2>
-          <div class="carrossel-habilidades">
-            <div class="carrossel-track">
-              <img src="./assets/Git.svg" alt="Git" />
-              <img src="./assets/JS.svg" alt="JavaScript" />
-              <img src="./assets/HTML.svg" alt="HTML" />
-              <img src="./assets/CSS.svg" alt="CSS" />
-              <img src="./assets/Git.svg" alt="Git" />
-              <img src="./assets/JS.svg" alt="JavaScript" />
-              <img src="./assets/HTML.svg" alt="HTML" />
-              <img src="./assets/CSS.svg" alt="CSS" />
+          <div class="hero-actions">
+            <a class="btn-primary" href="projetos.html">Ver projetos</a>
+            <a class="btn-outline" href="https://github.com/PedroMartinsam" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <div class="skills-strip" aria-hidden="true">
+            <div class="skills-track">
+              <img src="./assets/HTML.svg" alt="HTML" title="HTML">
+              <img src="./assets/CSS.svg" alt="CSS" title="CSS">
+              <img src="./assets/JS.svg" alt="JavaScript" title="JavaScript">
+              <img src="./assets/Git.svg" alt="Git" title="Git">
+              <img src="./assets/HTML.svg" alt="HTML" title="HTML">
+              <img src="./assets/CSS.svg" alt="CSS" title="CSS">
+              <img src="./assets/HTML.svg" alt="HTML" title="HTML">
+              <img src="./assets/CSS.svg" alt="CSS" title="CSS">
+              <img src="./assets/JS.svg" alt="JavaScript" title="JavaScript">
+              <img src="./assets/Git.svg" alt="Git" title="Git">
+              <img src="./assets/HTML.svg" alt="HTML" title="HTML">
+              <img src="./assets/CSS.svg" alt="CSS" title="CSS">
+              
             </div>
           </div>
         </div>
-      </section>
 
-      <div>
-        <img class="apresentacao__imagem" src="./assets/perfil.png" alt="Foto da Pedro Martins" loading="lazy" />
-
+        <figure class="hero-figure" aria-hidden="false">
+          <img src="./assets/perfil.png" alt="Foto de Pedro Martins" class="hero-figure-img" loading="lazy">
+        </figure>
       </div>
-    </main>
+    </section>
 
-    <!-- SOBRE MIM -->
-    <section id="sobre-mim" class="sobre-mim">
-      <div class="apresentacao_sobre_mim">
-        <h1 class="apresentacao_sobre_mim_titulo">Sobre mim</h1>
-        <p class="sobre_mim">
-          Sou desenvolvedor Full-Stack em formação, com foco em Front-end,
-          trabalhando com HTML, CSS, JavaScript, React, Next.js e Git/GitHub.
-          Tenho 22 anos, moro em Fernandópolis-SP e curso Análise e Desenvolvimento
-          de Sistemas.
+    <!-- SOBRE -->
+    <section id="sobre-mim" class="section" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title" class="section-title">Sobre mim</h2>
+        <p class="lead">
+          Sou desenvolvedor Full-Stack em formação com foco em Front-end. Trabalho com HTML, CSS, JavaScript, React, Next.js e Git/GitHub.
+          Tenho 22 anos, moro em Fernandópolis-SP e curso Análise e Desenvolvimento de Sistemas.
         </p>
-        <br>
-        <p class="sobre_mim">
-          Desenvolvo projetos próprios e sistemas web, sempre buscando evolução
-          contínua, código de qualidade e boas práticas no desenvolvimento.
+        <p>
+          Desenvolvo projetos próprios e sistemas web buscando evolução contínua, código de qualidade e boas práticas. Estou aberto a oportunidades de
+          estágio, freelas e projetos colaborativos.
         </p>
       </div>
     </section>
 
-    <!-- PROJETOS -->
-    <section id="projetos" class="projetos">
-      <h1 class="apresentacao_projetos_titulo">Projetos</h1>
+    
 
-      <div class="filtro_botoes">
-        <button class="filtro_btn active" data-filter="todos">Todos</button>
-        <button class="filtro_btn" data-filter="full-stack">Full-Stack</button>
-        <button class="filtro_btn" data-filter="back-end">Back-End</button>
-        <button class="filtro_btn" data-filter="front-end">Front-End</button>
-      </div>
+   
 
-      <div class="grade_projetos">
-
-        <div class="card_projeto todos full-stack">
-          <img class="img_projeto" src="./assets/KAVII – Sistema de Controle Financeiro.png"
-            alt="KAVII – Sistema de Controle Financeiro" />
-
-          <div class="info_projeto">
-            <h3>KAVII – Sistema de Controle Financeiro</h3>
-            <P></P>
-            <br>
-              KAVII é um sistema moderno de gestão financeira pessoal,
-              permitindo ao usuário controlar contas, lançamentos, extratos,
-              metas financeiras e muito mais.
-          </br>
-
-            <div class="tags">
-                   
-              <span>JAVA</span>
-              <span>SPRING BOOT</span>
-              <span>POSTGRES SQL</span>
-              <span>ANGULAR</span>
-            </div>
-
-
-
-            <div class="buttons">
-              <a href="https://github.com/PedroMartinsam/Projeto-Financeiro-KAVII" class="btn code" target="_blank">
-                <span class="emoji">📂</span> Código
-              </a>
-            </div>
-          </div>
-        </div>
-
-<!-- PROJETOS 2 -->
-
-        <div class="card_projeto todos front-end">
-          <img class="img_projeto" src="./assets/Formação_Front-end.png"
-            alt=" Formação Front-end — HTML, CSS, JavaScript e React" />
-
-          <div class="info_projeto">
-             <h3>Front-end — HTML, CSS, JavaScript e React</h3>
-            <br>
-              Repositório com projetos desenvolvidos durante minha formação em Front-end,
-               incluindo HTML, CSS, JavaScript e React.
-                Cada projeto demonstra aplicação prática de conceitos, 
-                layouts responsivos e funcionalidades interativas.
-          </br>
-
-            <div class="tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>jAVA SCRIPT</span>
-              <span>REACT</span>
-              <span>GITHUB</span>
-            </div>
-
-            <div class="buttons">
-              <a href="https://github.com/PedroMartinsam/-Forma-o-Front-end---HTML-CSS-JavaScript-React-e-" class="btn code" target="_blank">
-                <span class="emoji">📂</span> Código
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CERTIFICADOS -->
-    <section id="certificados" class="certificados">
-  <h1 class="apresentacao_certificados_titulo">Certificados</h1>
-
-  <div class="grade_certificados">
-
-    <!-- CARD 1 -->
-    <div class="card_certificado">
-      <img class="certificado" src="./assets/CERTIFICADO_CAIXA.jpg"
-        alt="CAIXA - Inteligência Artificial na Prática DIO" />
-
-      <div class="info_certificado">
-        <h3>CAIXA - Inteligência Artificial na Prática DIO</h3>
-        <br>
-          Bootcamp focado na aplicação prática de Inteligência Artificial,
-          abordando fundamentos de IA, automação de processos, uso de APIs inteligentes,
-          análise de dados e integração de soluções inteligentes em projetos reais.
-        </p>
-      </div>
-
-      <div class="buttons">
-        <a href="https://github.com/PedroMartinsam/Projetos-Portfolio/tree/main/CERTIFICADOS/certificados%20DIO/CAIXA%20-%20Intelig%C3%AAncia%20Artificial%20na%20Pr%C3%A1tica"
-          class="btn code" target="_blank">
-          <span class="emoji">📂</span> Certificados
-        </a>
-      </div>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="card_certificado">
-      <img class="certificado" src="./assets/fef.png"
-        alt="Fundação Educacional de Fernandópolis - FEF" />
-
-      <div class="info_certificado">
-        <h3>Fundação Educacional de Fernandópolis - FEF</h3>
-        <br>
-          Aqui estão os certificados referentes ao Atividade Complementar,
-          Atividade Extenção e cursos disponibilizados na Fundação Educacional de Fernandópolis - FEF.
-        </p>
-      </div>
-
-      <div class="buttons">
-        <a href="https://github.com/PedroMartinsam/Projetos-Portfolio/tree/main/CERTIFICADOS/certificados%20Funda%C3%A7%C3%A3o%20Educacional%20de%20Fernand%C3%B3polis%20-%20FEF"
-          class="btn code" target="_blank">
-          <span class="emoji">📂</span> Certificados
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-      
-
-      <section id="contatos" class="contatos">
-  <h1 class="apresentacao_contatos_titulo">
-     Entre em Contato
-  </h1>
-
+    <!-- CONTATO / FOOTER -->
+    <footer class="site-footer" id="contatos" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title" class="section-title">Entre em contato</h2>
 
         <div class="apresentacao_meus_contatos">
+          <a class="contact-card" href="mailto:pedromartinsam@gmail.com">
+            <img src="./assets/email.svg" alt="" aria-hidden="true">
+            <h3>E-mail</h3>
+          </a>
 
-          <div class="apresentacao_contatos">
-          <a href="mailto:pedromartinsam@gmail.com">
-              <img class="img_contato" src="./assets/email.svg" alt="E-mail" />
-              <h3>E-mail</h3>
-            </a>
-          </div>
+          <a class="contact-card" href="https://api.whatsapp.com/send?phone=5517991324217" target="_blank" rel="noopener">
+            <img src="./assets/telefone.svg" alt="" aria-hidden="true">
+            <h3>WhatsApp</h3>
+            
+          </a>
 
-          <div class="apresentacao_contatos">
-            <a href="https://api.whatsapp.com/send?phone=5517991324217" target="_blank">
-              <img class="img_contato" src="./assets/telefone.svg" alt="Telefone" />
-              <h3>WhatsApp</h3>
-            </a>
-          </div>
+          <a class="contact-card" href="https://www.linkedin.com/in/pedro-martins-a8986539b/" target="_blank" rel="noopener">
+            <img src="./assets/linkedin.svg" alt="" aria-hidden="true">
+            <h3>LinkedIn</h3>
+          
+          </a>
 
-          <div class="apresentacao_contatos">
-            <a href="https://www.linkedin.com/in/pedro-martins-a8986539b/" target="_blank">
-              <img class="img_contato" src="./assets/linkedin.svg" alt="Linkedin" />
-              <h3>LinkedIn</h3>
-            </a>
-          </div>
-
-          <div class="apresentacao_contatos">
-            <a href="https://github.com/PedroMartinsam" target="_blank">
-              <img class="img_contato" src="./assets/github.svg" alt="Github" />
-              <h3>GitHub</h3>
-            </a>
-          </div>
-
+          <a class="contact-card" href="https://github.com/PedroMartinsam" target="_blank" rel="noopener">
+            <img src="./assets/github.svg" alt="" aria-hidden="true">
+            <h3>GitHub</h3>
+           
+          </a>
         </div>
-      </section>
 
+        <div class="footer-bottom">
+          <p>© <span id="ano-atual"></span> Pedro Martins — Desenvolvedor Full-Stack. Todos os direitos reservados.</p>
+        </div>
+      </div>
     </footer>
-
   </div>
 
-  <!-- Scroll Suave -->
+  <!-- SCRIPTS -->
+  <script src="./filtro.js" defer></script>
   <script>
-    const linksInternos = document.querySelectorAll('.nav_links a[href^="#"]');
+    // small script to set current year in footer and enable smooth scroll for internal links
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('ano-atual').textContent = new Date().getFullYear();
 
-    function scrollToSection(event) {
-      event.preventDefault();
-      const href = event.currentTarget.getAttribute('href');
-      const section = document.querySelector(href);
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+      // smooth scroll for all internal anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.length > 1) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // close mobile menu after click (if open)
+            const nav = document.getElementById('primary-navigation');
+            const btn = document.getElementById('btn-menu');
+            if (nav.classList.contains('nav-open')) {
+              nav.classList.remove('nav-open');
+              btn.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
 
-    linksInternos.forEach(link => link.addEventListener('click', scrollToSection));
+      // mobile menu toggle
+      const btnMenu = document.getElementById('btn-menu');
+      const nav = document.getElementById('primary-navigation');
+      btnMenu.addEventListener('click', () => {
+        const open = nav.classList.toggle('nav-open');
+        btnMenu.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    });
   </script>
-
-  <script src="./filtro.js"></script>
-
 </body>
+
 </html>

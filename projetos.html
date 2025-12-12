@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Martins | Desenvolvedor Full-Stack</title>
+  <meta name="description" content="Portfólio de Pedro Martins — Desenvolvedor Full-Stack em formação, com foco em Front-end (HTML, CSS, JavaScript, React, Next.js)." />
+  <meta name="keywords" content="Pedro Martins, Desenvolvedor Front-end, Portfólio, HTML, CSS, JavaScript, React, Next.js" />
+  <meta name="author" content="Pedro Emmanuel Amaral Martins" />
+  <meta property="og:title" content="Pedro Martins | Desenvolvedor Full-Stack" />
+  <meta property="og:description" content="Confira meus projetos em Front-end e Full-Stack. HTML, CSS, JavaScript, React e Next.js." />
+  <link rel="icon" href="./assets/perfil.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="site">
+    <!-- HEADER / NAV -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Ir para o início">
+          <img src="./assets/perfil.png" alt="Foto de Pedro Martins" class="brand-img" />
+          <span class="brand-name">Pedro Martins</span>
+        </a>
+
+        <button id="btn-menu" class="btn-menu" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+
+        <nav id="primary-navigation" class="nav" role="navigation" aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="certificados.html">Certificados</a></li>
+            <li><a href="index.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section section-projects" aria-labelledby="projetos-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="projetos-title" class="section-title">Projetos</h2>
+          <div class="filtro_botoes" role="tablist" aria-label="Filtrar projetos">
+            <button class="filtro_btn active" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+            <button class="filtro_btn" data-filter="full-stack" role="tab">Full-Stack</button>
+            <button class="filtro_btn" data-filter="back-end" role="tab">Back-End</button>
+            <button class="filtro_btn" data-filter="front-end" role="tab">Front-End</button>
+          </div>
+        </div>
+
+        <div class="grade_projetos" id="projects-grid">
+          <!-- CARD 1 -->
+          <article class="card_projeto todos full-stack" tabindex="0" aria-label="KAVII - Sistema de Controle Financeiro">
+            <img class="img_projeto" src="./assets/KAVII – Sistema de Controle Financeiro.png" alt="KAVII – Sistema de Controle Financeiro" loading="lazy">
+            <div class="info_projeto">
+              <h3>KAVII — Sistema de Controle Financeiro</h3>
+              <p class="card-text">Sistema moderno de gestão financeira pessoal: contas, lançamentos, extratos e metas financeiras.</p>
+              <div class="tags">
+                <span>JAVA</span>
+                <span>SPRING BOOT</span>
+                <span>POSTGRES</span>
+                <span>ANGULAR</span>
+              </div>
+              <div class="buttons">
+                <a href="https://github.com/PedroMartinsam/Projeto-Financeiro-KAVII" class="btn code" target="_blank" rel="noopener">
+                  <span class="emoji">📂</span> Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="card_projeto todos front-end" tabindex="0" aria-label="Formação Front-end">
+            <img class="img_projeto" src="./assets/Formação_Front-end.png" alt="Formação Front-end" loading="lazy">
+            <div class="info_projeto">
+              <h3>Formação Front-end</h3>
+              <p class="card-text">Coleção de projetos: layouts responsivos, JS interativo e aplicações com React.</p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+                <span>REACT</span>
+                <span>GITHUB</span>
+              </div>
+              <div class="buttons">
+                <a href="https://github.com/PedroMartinsam/-Forma-o-Front-end---HTML-CSS-JavaScript-React-e-" class="btn code" target="_blank" rel="noopener">
+                  <span class="emoji">📂</span> Código
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+     <!-- SCRIPTS -->
+  <script src="./filtro.js" defer></script>
+  <script>
+    // small script to set current year in footer and enable smooth scroll for internal links
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('ano-atual').textContent = new Date().getFullYear();
+
+      // smooth scroll for all internal anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.length > 1) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // close mobile menu after click (if open)
+            const nav = document.getElementById('primary-navigation');
+            const btn = document.getElementById('btn-menu');
+            if (nav.classList.contains('nav-open')) {
+              nav.classList.remove('nav-open');
+              btn.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
+
+      // mobile menu toggle
+      const btnMenu = document.getElementById('btn-menu');
+      const nav = document.getElementById('primary-navigation');
+      btnMenu.addEventListener('click', () => {
+        const open = nav.classList.toggle('nav-open');
+        btnMenu.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>
