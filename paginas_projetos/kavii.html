@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KAVII | Sistema de Controle Financeiro</title>
+
+  <meta name="description" content="KAVII é um sistema moderno de controle financeiro pessoal, com gestão de contas, lançamentos, metas e dashboards interativos." />
+  <meta name="author" content="Pedro Emmanuel Amaral Martins" />
+
+  <link rel="icon" href="/assets/perfil.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="site">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <img src="/assets/perfil.png" alt="Pedro Martins" class="brand-img">
+          <span class="brand-name">Pedro Martins</span>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="/projetos.html">Projetos</a></li>
+            <li><a href="/certificados.html">Certificados</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO DO PROJETO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Projeto Full-Stack</p>
+          <h1 class="hero-title">
+            KAVII <span class="accent">Sistema Financeiro</span>
+          </h1>
+          <p class="hero-subtitle">
+            Sistema moderno de gestão financeira pessoal, focado em controle,
+            organização e visualização clara de dados financeiros em tempo real.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://github.com/PedroMartinsam/Projeto-Financeiro-KAVII" target="_blank" class="btn-primary">
+              Ver no GitHub
+            </a>
+            <a href="/projetos.html" class="btn-outline">
+              Voltar aos projetos
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- SOBRE O PROJETO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre o projeto</h2>
+
+        <p class="lead">
+  O KAVII é uma plataforma de gestão financeira pessoal desenvolvida para
+  centralizar, organizar e analisar informações financeiras de forma segura,
+  intuitiva e eficiente.
+</p>
+
+<p>
+  O sistema adota boas práticas de desenvolvimento e arquitetura, contando
+  com validações robustas, controle de acesso por permissões e mecanismos de
+  integridade de dados, garantindo confiabilidade, escalabilidade e proteção
+  contra operações indevidas ao longo do ciclo de uso da aplicação.
+</p>
+
+      </div>
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Funcionalidades principais</h2>
+
+        <ul class="lead" style="line-height: 1.8">
+          <li>✔ Gestão de lançamentos (receitas e despesas)</li>
+          <li>✔ Controle de múltiplas contas financeiras</li>
+          <li>✔ Metas financeiras com acompanhamento</li>
+          <li>✔ Organização por unidades financeiras</li>
+          <li>✔ Gestão de empresas e usuários</li>
+          <li>✔ Dashboard com filtros e gráficos interativos</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Tecnologias utilizadas</h2>
+
+        <div class="tags tech-tags">
+  <span class="java">Java 17</span>
+  <span class="spring">Spring Boot</span>
+  <span class="spring">Spring Security</span>
+  <span class="security">JWT</span>
+  <span class="orm">JPA / Hibernate</span>
+  <span class="db">PostgreSQL</span>
+  <span class="frontend">Angular</span>
+  <span class="frontend">TypeScript</span>
+  <span class="markup">HTML</span>
+  <span class="markup">CSS</span>
+  <span class="git">Git & GitHub</span>
+</div>
+
+      </div>
+    </section>
+
+    <!-- TELAS DO SISTEMA -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Telas do sistema</h2>
+
+        <div class="grade_projetos">
+          <div class="card_projeto">
+            <img src="./img/login.png"
+                 alt="Tela de login"
+                 class="img_projeto">
+            <div class="info_projeto">
+              <h3>Tela de Login</h3>
+              <p class="card-text">
+                Autenticação segura com e-mail e senha, utilizando JWT.
+              </p>
+            </div>
+          </div>
+
+          <div class="card_projeto">
+            <img src="./img/dashborard.png"
+                 alt="Dashboard"
+                 class="img_projeto">
+            <div class="info_projeto">
+              <h3>Dashboard</h3>
+              <p class="card-text">
+                Visão geral do sistema com acesso rápido às principais áreas.
+              </p>
+            </div>
+          </div>
+
+          <div class="card_projeto">
+            <img src="./img/extrato.png"
+                 alt="Extrato financeiro"
+                 class="img_projeto">
+            <div class="info_projeto">
+              <h3>Extrato e Filtros</h3>
+              <p class="card-text">
+                Extratos detalhados com filtros por conta, período e gráficos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        <p>© <span id="ano"></span> Pedro Martins — Desenvolvedor Full-Stack</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
